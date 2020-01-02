@@ -1,0 +1,22 @@
+.cont_main{
+    
+}
+.card1{    
+    height: 300px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.card1 img{
+    height: 100%;
+    display: inline-block;    
+    border: solid 2px white;
+}
+.card1_subtitle{   
+    width: 100%;
+    background-color: rgba(108, 101, 108, 0.61);
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;    
+    padding: 5px;
+}

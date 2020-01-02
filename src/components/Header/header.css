@@ -1,0 +1,19 @@
+/* @font-face{
+    font-family: 'starjout.ttf';    
+    src: url('../../fonts/starjout.ttf'); */
+.sw_title{
+    font-family: jedi-outline;
+    font-size: 4em;
+    color: #FFEE58;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.2;
+    /* font-family: 'Starjout'; */
+}
+.sw_subtitle{
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -10px;
+}

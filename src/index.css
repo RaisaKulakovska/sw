@@ -1,0 +1,9 @@
+body{
+    background: url(https://new-science.ru/wp-content/uploads/2019/11/5623.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+}
+.cont_app{
+    position: relative;
+}
