@@ -12,7 +12,7 @@ class Home extends React.Component{
                 <div className="col text-center mb-3">
                     <div className="card1 ">
                         <Link to="/People">
-                        <img src="https://starwars-visualguide.com/assets/img/characters/85.jpg"/>
+                        <img src="https://starwars-visualguide.com/assets/img/characters/85.jpg" alt=""/>
                         <h3 className="card1_subtitle">People</h3>
                         </Link>
                     </div>                    
@@ -20,7 +20,7 @@ class Home extends React.Component{
                 <div className="col text-center mb-3">
                     <div className="card1 ">
                         <Link to="/Planets">
-                        <img src="https://starwars-visualguide.com/assets/img/planets/5.jpg"/>
+                        <img src="https://starwars-visualguide.com/assets/img/planets/5.jpg" alt=""/>
                         <h3 className="card1_subtitle">Planets</h3>
                         </Link>
                     </div>                    
@@ -28,7 +28,7 @@ class Home extends React.Component{
                 <div className="col text-center mb-3">
                     <div className="card1 ">
                     <Link to="/Films">
-                        <img src="https://starwars-visualguide.com/assets/img/films/6.jpg"/>
+                        <img src="https://starwars-visualguide.com/assets/img/films/6.jpg" alt=""/>
                         <h3 className="card1_subtitle">Films</h3>
                     </Link>
                     </div>                    

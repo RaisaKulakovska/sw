@@ -12,11 +12,11 @@ import Footer from "./components/Footer/footer";
 import NotFound from "./components/NotFound/notFound";
 
 class App extends React.Component{
-    /* state={
+     state={
         loading: true,
         person: []
     }
-    componentDidMount=()=>{
+     componentDidMount=()=>{
         const url_swapi="https://swapi.co/api/people";
         fetch(url_swapi, {method: "GET"})
         .then(responce=>{
@@ -30,19 +30,18 @@ class App extends React.Component{
         })
       .catch(err=>console.log(err));  
             
-    } */
+    }  
    render(){
-    //console.log(this.state.person);
+    console.log(this.state.person);
        return(
            <Router>
            <div className="container cont_app">
-               <Header></Header>
-                <Home></Home>
+               <Header></Header>                
                   <Switch>
-                      <Route path="/people" exact component={People}></Route>
-                      <Route path="/planets" exact component={Planets}></Route>
-                      <Route path="/films" exact component={Films}></Route>
                       <Route path="/" exact component={Home}></Route>
+                      <Route path="/People" exact component={People}></Route>
+                      <Route path="/Planets" exact component={Planets}></Route>
+                      <Route path="/Films" exact component={Films}></Route>                      
                       <Route path="*" exact component={NotFound}></Route>
                   </Switch>                
                <Footer></Footer>
