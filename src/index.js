@@ -12,27 +12,11 @@ import Footer from "./components/Footer/footer";
 import NotFound from "./components/NotFound/notFound";
 
 class App extends React.Component {
-    state = {
-        loading: true,
+    state = {        
         person: []
     }
-    componentDidMount = () => {
-        const url_swapi = "https://swapi.co/api/people";
-        fetch(url_swapi, { method: "GET" })
-            .then(responce => {
-                return responce.json();
-            })
-            .then(data => {
-                this.setState({
-                    person: data,
-                    loading: false
-                });
-            })
-            .catch(err => console.log(err));
-
-    }
-    render() {
-        //console.log(this.state.person);
+        render() {
+       
         return (
             <Router>
                 <div className="container cont_app">

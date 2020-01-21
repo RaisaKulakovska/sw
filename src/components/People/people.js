@@ -1,13 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./people.css";
-import Header from "../Header/header";
-import Footer from "../Footer/footer";
+import PeopleItem from "./PeopleList/PeopleItem/peopleItem"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-class People extends React.Component {
+/* class People extends React.Component {
     state = {
         PeopleList: []
-    }
-    //in item
+    }    
     componentDidMount = () => {
         const url_people = "https://swapi.co/api/people";
         fetch(url_people, { metod: "GET" })
@@ -31,6 +30,38 @@ class People extends React.Component {
             </div>
         )
     }
+} */
+class People extends React.Component {
+    state = {
+        PeopleList: []
+    }
+    componentDidMount = () => {
+        const url_people = "https://swapi.co/api/people";
+        fetch(url_people, { metod: "GET" })
+            .then(responce => {
+                return responce.json();
+            })
+            .then(({ results }) => {
+                this.setState({
+                    PeopleList: results
+                });
+            })
+    }
+    render() {
+        return (
+            <Router>
+                <div className="container">
+                    <Switch>
+                        <Route path="/" exact component={() => (
+                            <PeopleList
+                                PeopleList={this.state.PeopleList}
+                            />
+                        )}
+                        ></Route>
+                    </Switch>
+                </div>
+            </Router>
+        )
+    }
 }
-
 export default People;
